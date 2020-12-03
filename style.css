@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+main {
+  width: 100%;
+  display: flex;
+}
+.main-left,
+.main-right {
+  width: 100%;
+  height: 100%;
+  flex: 0.5;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+form {
+  display: flex;
+  align-items: center;
+}
+.form-inputs {
+  display: flex;
+  margin: 15px 0px 15px 30px;
+  align-items: center;
+}
+.form-container > p {
+  margin-left: 250px;
+  cursor: pointer;
+}
+.form-container > p:hover {
+  text-decoration: underline;
+}
+.form-field {
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f8fa;
+  height: 60px;
+  margin-right: 20px;
+  padding: 10px 15px 0px 15px;
+  border-bottom: 2px solid black;
+  color: #aab8c2;
+}
+.form-field-password {
+  color: #1da1f2;
+  font-size: 14px;
+}
+label {
+  font-size: 15px;
+}
+input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  height: 80%;
+  width: 100%;
+}
+.form-loginBtn {
+  background-color: transparent;
+  width: 70px;
+  color: #1da1f2;
+  border: 1px solid #1da1f2;
+  padding: 10px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.form-loginBtn:hover {
+  background-color: #f5f8fa;
+}
+
+section {
+  margin: 15px auto auto 100px;
+  padding-right: 100px;
+  display: flex;
+  flex-direction: column;
+}
+section > * {
+  margin-top: 20px;
+}
+section h1 {
+  font-size: 30px;
+  font-weight: 800;
+}
+section > p {
+  font-weight: bold;
+  margin-top: 45px;
+  font-size: 15px;
+}
+section button {
+  padding: 10px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+#sign-up {
+  color: white;
+  background-color: #1da1f2;
+}
+#log-in {
+  border: 1px solid #1da1f2;
+  background-color: transparent;
+  color: #1da1f2;
+}
+.fa-twitter {
+  color: #1da1f2;
+  font-size: 36px;
+}
+footer {
+  text-align: center;
+  margin-top: 15px;
+}
+.footer-links > * {
+  text-decoration: none;
+  color: #2b4453;
+  font-size: 14px;
+  margin: 10px 5px;
+}
+.footer-links > *:hover {
+  text-decoration: underline;
+}
+.footer-copyright {
+  color: #2b4453;
+  font-size: 14px;
+  margin: 10px;
+}
+@media screen and (max-width: 1200px) {
+  form {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  main {
+    flex-direction: column;
+  }
+  .main-right {
+    order: -1;
+    margin: 10px 0px 30px 0px;
+  }
+  section {
+    padding-right: 0px;
+    margin: 0px 30px 30px 30px;
+  }
+  .main-left,
+  .main-right {
+    flex: 1;
+  }
+}
